@@ -4,6 +4,7 @@
 	<head>
 		<title>Development Projects for FreeCodeCamp.com</title>
 		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css ">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript">
 			
@@ -25,118 +26,15 @@
 			    	scrollTop: $('#contacts').offset().top
 			    }, 1000);
             });
+
+            $('#toTopBorder').click(function (){
+                $('html, body').animate({
+			    	scrollTop: $('body').offset().top
+			    }, 1000);
+            });
         });
 
 		</script>
-		<style type="text/css">
-			
-			body {
-				background-color: #4d2c02;
-			}
-
-			.div-main {
-				margin-top: 20px;
-				padding: 0;
-				background-color: #ff9a22;
-				border: 4px dashed #000;
-			}
-
-			.logo-img {
-				min-height: 300px;
-				background-image: url(img/logo.png);
-				background-repeat: no-repeat;
-				background-size: 800px;
-				background-position: 50px 50%;
-				align-content: middle;
-			}
-
-			.logo-img p {
-				padding: 0 30px;
-				margin: 0;
-				text-align: right;
-				display: block;
-				font-size: 36px
-			}
-
-			.main-nav-bar {
-				margin: 10px 0;
-				padding: 0;
-				list-style: none;
-				overflow: hidden;
-				border-top: 2px solid #000;
-				border-bottom: 2px solid #000;
-			}
-
-			.main-nav-bar li {
-				float: left;
-				width: 12em;
-				border-right: 1px solid #000;
-				padding: 3px 7px;
-			}
-
-			.main-nav-bar a {
-				color: #000;
-				display: block;
-				font-weight: bold;
-				text-align: center;
-				font-size: 20px;
-			}
-
-			.main-content div {
-				padding: 10px 5px;
-			}
-
-			.main-content p {
-				color: #000;
-				text-align: center;
-				font-size: 18px;
-			}
-
-			.my-photo-img {
-				text-align: center;
-			}
-
-			.my-photo-img img {
-				width: 75%;
-				border: 5px solid black;
-				border-radius: 50%;
-			}
-
-			.underlined {
-				border-bottom: 4px dashed black;
-				overflow: hidden;
-
-			}
-
-			.soc-img {
-				list-style: none;
-				margin: 5px 0;
-			}
-
-			.soc-img li {
-				margin: 10px 0;
-			}
-
-			.soc-img a {
-				color: black;
-				text-decoration: underline;
-				display: inline;
-				font-style: bold;
-				font-size: 24px;
-			}
-
-			.soc-img a:hover {
-				font-style: italic;
-			}
-
-			.soc-img img {
-				width: 75px;
-				display: inline;
-				float: center;
-				padding-right: 20px;
-			}
-
-		</style>
 	</head>
 
 	<body>
@@ -178,41 +76,43 @@
 				</div>
 
 				<div class="underlined" id="projects">
-					<p>
-						Front End Development Certification:
-						<ul>
-							<li></li>
-						</ul>
-					</p>
-					<p>
-						Data Visualisation Certification:
-						<ul>
-							<li></li>
-						</ul>
-					</p>
 
-					<p>
-						Back End Development Certification:
-						<ul>
-							<li></li>
-						</ul>
-					</p>
+						<div class="col-md-12">
+							<h3>Front End Development Certification:</h3>
+							<figure>
+								<a href="proj1.html"><img src="img/proj1_prew.jpg"></a>
+								<figcaption> 
+								<u>Задание первое:</u> <br> Условия задания, воссоздать статью об исследователе, воспользовавшись базовыми навыками HTML и CSS
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="col-md-12">
+							<h3>Data Visualisation Certification:</h3>
+							Coming Soon
+						</div>
+
+						<div class="col-md-12">
+							<h3>Back End Development Certification:</h3>
+							Coming Soon
+						</div>
+
 				</div>
 
 				<div class="underlined col-md-12" id="contacts">
 					
 					<ul class="soc-img">
-						<li><a href=""><img src="img/fcc.png">FreeCodeCamp</a></li>
-						<li><a href=""><img src="img/git.png">GitHub</a></li>
-						<li><a href=""><img src="img/vk.png">Вконтакте</a></li>
-						<li><a href=""><img src="img/gb.png">GeekBrains</a></li>
+						<li><a href="https://www.freecodecamp.com/sherka"><img src="img/fcc.png">FreeCodeCamp</a></li>
+						<li><a href="https://github.com/Sherka"><img src="img/git.png">GitHub</a></li>
+						<li><a href="https://geekbrains.ru/users/1039237"><img src="img/vk.png">Вконтакте</a></li>
+						<li><a href="https://vk.com/sher_ka"><img src="img/gb.png">GeekBrains</a></li>
 					</ul>
 
 				</div>
 			</div>
 			
 			<div class="col-md-12">
-				Some copyrights
+				<button id="toTopBorder">Go Top</button>
 			</div>
 			
 		</div>
