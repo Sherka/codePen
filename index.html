@@ -46,13 +46,41 @@
 			.main-nav-bar li {
 				float: left;
 				width: 8em;
-				border-right: 1px solid #999;
+				border-right: 1px solid #000;
 				padding: 3px 7px;
 			}
 
 			.main-nav-bar a {
 				color: #000;
 				display: block;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.main-content {
+			}
+
+			.main-content p {
+				color: #000;
+				text-align: center;
+				font-size: 18px;
+			}
+
+			.my-photo-img {
+				text-align: center;
+			}
+
+			.my-photo-img img {
+				width: 75%;
+				vertical-align: middle;
+				border: 5px solid black;
+				border-radius: 50%;
+			}
+
+			.underlined {
+				border-bottom: 4px dashed black;
+				overflow: hidden;
+
 			}
 
 		</style>
@@ -72,11 +100,39 @@
 				</ul>
 			</div>
 			
-			<div>
-				Hello World
+			<div class="main-content">
+
+				<div class="underlined">
+					<div class="col-md-6">
+						<p><h3 style="text-align: center;">Здравствуйте!</h3></p>
+						
+						<p>
+						Меня зовут Михаил. В данный момент Я создаю сайт для прохождения обучающей программы на сайте FreeCodeCamp.com, и буду на нем размещать все выполненные проекты различных для заданий.
+						</p>
+
+						<p>
+						Я увлекаюсь программированием и надеюсь в будущем найти себе работу в одном из направлений сферы ИТ.
+						Увлекаюсь веб-программированием, изучаю HTML, CSS, PHP, MySQL, Javascript. В данный момент багаж моих знаний не так велик, но с каждым пройденным днем, багаж моих знаний увеличивается.
+						</p>
+
+						<p>
+						Также изучаю такие языки как C# и Java. Возможно некоторые мои наработки в данных областях так же будут появляться на данном сайте.
+						</p>
+					</div>
+
+					<div class="col-md-6 my-photo-img">
+						<img src="img/myFoto.jpg">
+					</div>
+				</div>
+
+				<div class="underlined">
+					<p>
+						Здесь будут размещаться картиночки на мои работы для FCC
+					</p>
+				</div>
 			</div>
 			
-			<div>
+			<div class="col-md-12">
 				Hello World
 			</div>
 			
