@@ -45,7 +45,7 @@
 
 			.main-nav-bar li {
 				float: left;
-				width: 8em;
+				width: 12em;
 				border-right: 1px solid #000;
 				padding: 3px 7px;
 			}
@@ -55,9 +55,11 @@
 				display: block;
 				font-weight: bold;
 				text-align: center;
+				font-size: 20px;
 			}
 
-			.main-content {
+			.main-content div {
+				padding: 10px 5px;
 			}
 
 			.main-content p {
@@ -72,7 +74,6 @@
 
 			.my-photo-img img {
 				width: 75%;
-				vertical-align: middle;
 				border: 5px solid black;
 				border-radius: 50%;
 			}
@@ -81,6 +82,34 @@
 				border-bottom: 4px dashed black;
 				overflow: hidden;
 
+			}
+
+			.soc-img {
+				list-style: none;
+				margin: 5px 0;
+			}
+
+			.soc-img li {
+				margin: 10px 0;
+			}
+
+			.soc-img a {
+				color: black;
+				text-decoration: underline;
+				display: inline;
+				font-style: bold;
+				font-size: 24px;
+			}
+
+			.soc-img a:hover {
+				font-style: italic;
+			}
+
+			.soc-img img {
+				width: 75px;
+				display: inline;
+				float: center;
+				padding-right: 20px;
 			}
 
 		</style>
@@ -94,9 +123,8 @@
 			<div class="nav-bar">
 				<ul class="main-nav-bar">
 					<li><a href="">Home</a></li>
-					<li><a>About me</a></li>
-					<li><a>My projects</a></li>
-					<li><a>Contacts</a></li>
+					<li><a href="">My projects</a></li>
+					<li><a href="">Contacts</a></li>
 				</ul>
 			</div>
 			
@@ -130,10 +158,21 @@
 						Здесь будут размещаться картиночки на мои работы для FCC
 					</p>
 				</div>
+
+				<div class="underlined col-md-12">
+					
+					<ul class="soc-img">
+						<li><a href=""><img src="img/fcc.png">FreeCodeCamp</a></li>
+						<li><a href=""><img src="img/git.png">GitHub</a></li>
+						<li><a href=""><img src="img/vk.png">Вконтакте</a></li>
+						<li><a href=""><img src="img/gb.png">GeekBrains</a></li>
+					</ul>
+
+				</div>
 			</div>
 			
 			<div class="col-md-12">
-				Hello World
+				Some copyrights
 			</div>
 			
 		</div>
