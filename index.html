@@ -4,6 +4,30 @@
 	<head>
 		<title>Development Projects for FreeCodeCamp.com</title>
 		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			
+		$(document).ready(function (){
+			$('#toTop').click(function (){
+                $('html, body').animate({
+			    	scrollTop: $('body').offset().top
+			    }, 1000);
+            });
+
+            $('#toProjects').click(function (){
+                $('html, body').animate({
+			    	scrollTop: $('#projects').offset().top
+			    }, 1000);
+            });
+
+            $('#toContacts').click(function (){
+                $('html, body').animate({
+			    	scrollTop: $('#contacts').offset().top
+			    }, 1000);
+            });
+        });
+
+		</script>
 		<style type="text/css">
 			
 			body {
@@ -122,9 +146,9 @@
 
 			<div class="nav-bar">
 				<ul class="main-nav-bar">
-					<li><a href="">Home</a></li>
-					<li><a href="">My projects</a></li>
-					<li><a href="">Contacts</a></li>
+					<li><a id="toTop">Home</a></li>
+					<li><a id="toProjects">My projects</a></li>
+					<li><a id="toContacts">Contacts</a></li>
 				</ul>
 			</div>
 			
@@ -153,7 +177,7 @@
 					</div>
 				</div>
 
-				<div class="underlined">
+				<div class="underlined" id="projects">
 					<p>
 						Front End Development Certification:
 						<ul>
@@ -175,7 +199,7 @@
 					</p>
 				</div>
 
-				<div class="underlined col-md-12">
+				<div class="underlined col-md-12" id="contacts">
 					
 					<ul class="soc-img">
 						<li><a href=""><img src="img/fcc.png">FreeCodeCamp</a></li>
