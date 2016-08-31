@@ -6,8 +6,53 @@
 		<link rel="stylesheet" href="css/bootstrap.css"/>
 		<style type="text/css">
 			
+			body {
+				background-color: #4d2c02;
+			}
+
 			.div-main {
-				background-color: lime;
+				margin-top: 20px;
+				padding: 0;
+				background-color: #ff9a22;
+				border: 4px dashed #000;
+			}
+
+			.logo-img {
+				min-height: 300px;
+				background-image: url(img/logo.png);
+				background-repeat: no-repeat;
+				background-size: 800px;
+				background-position: 50px 50%;
+				align-content: middle;
+			}
+
+			.logo-img p {
+				padding: 0 30px;
+				margin: 0;
+				text-align: right;
+				display: block;
+				font-size: 36px
+			}
+
+			.main-nav-bar {
+				margin: 10px 0;
+				padding: 0;
+				list-style: none;
+				overflow: hidden;
+				border-top: 2px solid #000;
+				border-bottom: 2px solid #000;
+			}
+
+			.main-nav-bar li {
+				float: left;
+				width: 8em;
+				border-right: 1px solid #999;
+				padding: 3px 7px;
+			}
+
+			.main-nav-bar a {
+				color: #000;
+				display: block;
 			}
 
 		</style>
@@ -15,7 +60,26 @@
 
 	<body>
 		<div class="row div-main col-md-10 col-md-offset-1">
-			Hello World
+			
+			<div class="logo-img"></div>
+
+			<div class="nav-bar">
+				<ul class="main-nav-bar">
+					<li><a href="">Home</a></li>
+					<li><a>About me</a></li>
+					<li><a>My projects</a></li>
+					<li><a>Contacts</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				Hello World
+			</div>
+			
+			<div>
+				Hello World
+			</div>
+			
 		</div>
 	</body>
 </html>
